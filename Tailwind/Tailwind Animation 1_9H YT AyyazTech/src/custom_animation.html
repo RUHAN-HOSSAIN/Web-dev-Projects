@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Animation</title>
+
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="w-screen h-screen">
+    <div class="w-full h-full flex flex-col gap-8 justify-center items-center">
+        <div>   <!-- wiggle 0.5s ease-in-out infinite -->
+            <span class="animate-wiggle inline-block text-2xl">!!</span>&nbsp; Hi there
+        </div>
+        <div>
+            <span class="animate-[wiggle_0.8s_ease-in-out_2] inline-block text-2xl">$$</span>&nbsp; Whats Up!
+        </div>
+
+
+        <div class="animate-fadeIn text-2xl">...Modal Container..</div>
+
+
+        <div class="spin-slow h-8 w-8 border-4 border-purple-600 border-solid rounded-full border-t-transparent"></div>
+
+        <button class="btn-bounce">Click Here</button>
+
+        <div class="group p-4 bg-blue-200 rounded-2xl inline-block">
+            <img src="./assets/RUET.jpg" class="inline-block group-hover:animate-bounce w-16 h-16 rounded-full" alt="ruet-logo">
+            <span>Hover this box to bounce photo</span>
+        </div>
+    </div>
+</body>
+</html>

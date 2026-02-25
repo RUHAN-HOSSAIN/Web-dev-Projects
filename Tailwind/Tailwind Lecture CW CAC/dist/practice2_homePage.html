@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PW Skills.com</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white">
+
+    <!-- navbar goes here -->
+    <nav class="w-full h-18 px-4 md:px-5 bg-fuchsia-900 flex justify-between items-center backdrop-blur-3xl">
+        <div class="text-2xl font-bold text-white">Tailwind CSS</div>
+
+        <div class="hidden h-9 md:block md:flex-1 md:bg-white md:max-w-md mx-4 min-w-0 rounded-xs overflow-hidden">
+            <input type="text" placeholder="Search" class="w-full h-full px-2 py-1 rounded text-indigo-900"/>
+        </div>
+
+        <div class="hidden md:flex text-white">
+            <ul class="hidden md:flex shrink-0 font-semibold items-center">
+                <li class="mx-2.5 cursor-pointer hover:underline">Home</li>
+                <li class="mx-2.5 cursor-pointer hover:underline">About Us</li>
+                <li class="mx-2.5 cursor-pointer hover:underline">Contact Us</li>
+            </ul>
+            <button class="bg-green-700 font-bold py-1 px-2 rounded-sm text-white ml-7 cursor-pointer hover:bg-green-900">Login</button>
+            <button class="bg-red-600 font-bold py-1 px-2 rounded-sm text-white ml-5 cursor-pointer hover:bg-red-800">Sign Up</button>
+        </div>
+
+        <div class="md:hidden text-white">
+            <a class="font-extrabold" href="#">&#9776;</a>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <header class="w-full h-auto">
+        <img class="w-full hidden md:block" src="../images/pc-hero.jpg" alt="">
+        <img class="w-full md:hidden" src="../images/mobile-hero.png" alt="">
+    </header>
+
+    <!-- Our Student section -->
+    <div class="h-auto w-full flex flex-wrap flex-col items-center text-center p-10">
+        <div class="h-auto w-full flex flex-wrap flex-col items-center text-center">
+            <p class="text-fuchsia-800 font-bold text-[20px] md:text-3xl">"Pure Hardwork, No Shortcuts!"</p>
+            <div class="w-36 h-1 border-4 border-yellow-300 rounded-3xl mb-7 mt-3 md:mt-4"></div>
+        </div>
+        <div class="w-full flex flex-wrap justify-evenly">
+            <div class="w-50 flex flex-col items-center mb-12">
+                <img class="w-44 h-44" src="../images/pic1.svg" alt="">
+                <p class="text-2xl font-bold">600+</p>
+                <p class="text-[20px] font-bold text-gray-500">Different Courses</p>
+            </div>
+            <div class="w-50 flex flex-col items-center mb-12">
+                <img class="w-44 h-44" src="../images/pic2.png" alt="">
+                <p class="text-2xl font-bold">700,000+</p>
+                <p class="text-[20px] font-bold text-gray-500">Students Enrolled</p>
+            </div>
+            <div class="w-50 flex flex-col items-center mb-12">
+                <img class="w-44 h-44" src="../images/pic3.png" alt="">
+                <p class="text-2xl font-bold">10,000+</p>
+                <p class="text-[20px] font-bold text-gray-500">Successful Transition</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Product -->
+    <div class="h-auto w-full flex flex-wrap flex-col items-center text-center p-10">
+        <div class="h-auto w-full flex flex-wrap flex-col items-center text-center">
+            <p class="text-fuchsia-800 font-bold text-[20px] md:text-3xl">"Our Products"</p>
+            <div class="w-36 h-1 border-4 border-yellow-300 rounded-3xl mb-7 mt-3 md:mt-4"></div>
+        </div>
+        <div class="w-[90%] h-auto flex flex-wrap justify-around ">
+            <div class="w-45 h-fit flex flex-col items-center mb-12 p-0.75 bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-sm overflow-hidden">
+                <img src="../images/pic4.png" alt="">
+                <p class="w-full bg-white text-[16px] font-bold">PW Skills Lab</p>
+                <p class="w-full p-0.5 bg-white text-[12px] text-gray-500">Supercharge your project development with our robust lab.</p>
+            </div>
+            <div class="w-45 h-fit flex flex-col items-center mb-12 p-0.75 bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-sm overflow-hidden">
+                <img src="../images/pic5.svg" alt="">
+                <p class="w-full bg-white text-[16px] font-bold">Job Portal</p>
+                <p class="w-full p-0.5 bg-white text-[12px] text-gray-500">Use exceptional templates for a stand-out resume minus the sign up process.</p>
+            </div>
+            <div class="w-45 h-fit flex flex-col items-center mb-12 p-0.75 bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-sm overflow-hidden">
+                <img src="../images/pic6.png" alt="">
+                <p class="w-full bg-white text-[16px] font-bold">Experience Portal</p>
+                <p class="w-full p-0.5 bg-white text-[12px] text-gray-500">PW Skill's self-paced experience portal priorities hands-on training with 570+ internsgip projects.</p>
+            </div>
+            <div class="w-45 h-fit flex flex-col items-center mb-12 p-0.75 bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-sm overflow-hidden">
+                <img src="../images/pic7.png" alt="">
+                <p class="w-full bg-white text-[16px] font-bold">Affilate</p>
+                <p class="w-full p-0.5 bg-white text-[12px] text-gray-500">Explore affilate maarketing opportunities with PW Skills and attain financial freedom.</p>
+            </div>
+            <div class="w-45 h-fit flex flex-col items-center mb-12 p-0.75 bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-sm overflow-hidden">
+                <img src="../images/pic8.jpg" alt="">
+                <p class="w-full bg-white text-[16px] font-bold">Achivement</p>
+                <p class="w-full p-0.5 bg-white text-[12px] text-gray-500">Our student placements and 100K+ career transitions speak volumes about our courses.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Last Footer -->
+    <footer class="w-full px-4 md:px-10 lg:px-25 text-white pt-8 flex flex-col flex-wrap justify-between bg-linear-to-r from-[#171214] to-[#45141f]">
+        <div class="max-w-162.5 mt-10">
+            <p class="text-[16px] sm:text-xl  font-bold font-sans">Elevate your skills! Seamlessly blend the worlds of technology & business together for a future full of <span class="bg-linear-to-r from-[#E97862] to-[#8461E7] bg-clip-text text-transparent">endless possibilities.</span></p>
+        </div>
+
+        <div class="flex flex-col lg:flex-row justify-between my-8">
+            <div class="flex flex-col sm:flex-row">
+                <div class="mr-6">
+                    <div class="w-27 h-8" style="background-image: url(../images/pic10.png); background-size: cover;"></div>
+                    <ul class="text-[12px] md:text-sm text-gray-400 my-4">
+                        <li class="my-4 md:text-base md:leading-6 text-[12px] font-semibold leading-4.5 md:text-[14px] md:font-normal">Contact Us: +91 7349432553</li>
+                        <li class="m-4 flex place-items-center">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p class="ml-2 md:text-base md:leading-6 text-[12px] font-semibold leading-4.5 md:text-[14px] md:font-normal">17th floor Tower A, Brigade Signature Towers, Sannatammanahalli, Bengaluru, Karnataka 562129.</p>
+                        </li>
+                        <li class="m-4 flex place-items-center">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p class="ml-2 md:text-base md:leading-6 text-[12px] font-semibold leading-4.5 md:text-[14px] md:font-normal">Email Us: support@pwskills.com</p>
+                        </li>
+                    </ul>
+                    <div class="w-10 h-10" style="background-image: url(../images/pic11.png); background-size: cover;"></div>
+                </div>
+    
+                <div class="mr-6 min-w-25 sm:min-w-50">
+                    <p class="font-bold mt-4">Company</p>
+                    <div class="bg-orange-500 block max-w-full h-0.75 rounded-2xl my-3"></div>
+                    <ul class=" text-gray-300 text-[12px] md:text-sm">
+                        <li class="my-2" style="line-height: 30px;">About us</li>
+                        <li class="my-2" style="line-height: 30px;">Contact us</li>
+                        <li class="my-2" style="line-height: 30px;">FAQ</li>
+                        <li class="my-2" style="line-height: 30px;">Blog</li>
+                        <li class="my-2" style="line-height: 30px;">Career Services</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row">
+                <div class="mr-6 min-w-25 md:min-w-85">
+                    <p class="font-bold mt-4">Categories</p>
+                    <div class="bg-orange-500 block max-w-full h-0.75 rounded-2xl mt-3 mb-1"></div>
+                    <div class="flex flex-col md:flex-row">
+                        <ul class="block text-gray-300 text-[12px] md:text-sm mr-4">
+                            <li class="my-2" style="line-height: 30px;">Data Science Analytics</li>
+                            <li class="my-2" style="line-height: 30px;">Digital Marketing With AI</li>
+                            <li class="my-2" style="line-height: 30px;">Tarvel and Hospitality</li>
+                            <li class="my-2" style="line-height: 30px;">PW CareerLift</li>
+                            <li class="my-2" style="line-height: 30px;">Product Management with AI</li>
+                        </ul>
+                        <ul class="block text-gray-300 text-[12px] md:text-sm">
+                            <li class="my-2" style="line-height: 30px;">Software Development Corses</li>
+                            <li class="my-2" style="line-height: 30px;">Banking &amp; Finance</li>
+                            <li class="my-2" style="line-height: 30px;">Programming Courses</li>
+                            <li class="my-2" style="line-height: 30px;">Cybersecurity courses</li>
+                            <li class="my-2" style="line-height: 30px;">PW School of Healthcare</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div>
+                    <p class="font-bold mt-4 mb-8">Follow Us</p>
+                    <ul>
+                        <li class="flex place-items-center my-3">
+                            <i class="fa-brands fa-linkedin text-lg md:text-[22px]"></i>
+                            <a class="ml-2" href="#">Linkedin</a>
+                        </li>
+                        <li class="flex place-items-center my-3">
+                            <i class="fa-brands fa-youtube text-lg md:text-[22px]"></i>
+                            <a class="ml-2" href="#">Youtube</a>
+                        </li>
+                        <li class="flex place-items-center my-3">
+                            <i class="fa-brands fa-telegram text-lg md:text-[22px]"></i>
+                            <a class="ml-2" href="#">Telegram</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bg-white block max-w-full h-0.75 rounded-2xl mb-7"></div>
+
+        <div class="mb-7 flex justify-between flex-col sm:flex-row text-gray-300 text-[12px] md:text-sm">
+            <div>
+                <p>&copy; 2024 PWSkills. All rights reserved.</p>
+            </div>
+            <div>
+                <p class="mr-5 inline-block">Privacy policy</p>
+                <p class="inline-block">Tearms and Conditions</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

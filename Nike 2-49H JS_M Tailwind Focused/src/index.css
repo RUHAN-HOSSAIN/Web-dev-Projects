@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+/* ===== SOURCE ===== */
+@source "./index.html";
+@source "./src/**/*.{js,ts,jsx,tsx}";
+
+/* ===== THEME (CSS-first Tailwind v4) ===== */
+@theme {
+  /* COLORS */
+  --color-primary: #ECEEFF;
+  --color-coral-red: #FF6452;
+  --color-slate-gray: #6D6D6D;
+  --color-pale-blue: #F5F6FF;
+  --color-white-400: rgba(255, 255, 255, 0.8);
+
+  /* FONTS */
+  --font-palanquin: "Exo 2", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+
+  /* SHADOW */
+  --shadow-3xl: 0 10px 40px rgba(0,0,0,0.15);
+
+  /* BACKGROUND IMAGES */
+  --bg-hero: url("assets/images/collection-background.svg");
+  --bg-card: url("assets/images/thumbnail-background.svg");
+
+  /* CUSTOM BREAKPOINT */
+  --breakpoint-wide: 1200px;
+}
+
+/* ===== GLOBAL ===== */
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* ===== BASE ===== */
+@layer base {
+  body {
+    @apply font-montserrat bg-pale-blue text-slate-gray text-base;
+  }
+}
+
+/* ===== COMPONENTS ===== */
+@layer components {
+  .max-container {
+    @apply max-w-[1280px] mx-auto;
+  }
+
+  .input {
+    @apply sm:flex-1 max-sm:w-full text-base leading-normal pl-5 max-sm:p-5
+           outline-none sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
+  }
+
+  .bg-hero {
+    background-image: var(--bg-hero);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .bg-card {
+    background-image: var(--bg-card);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* ===== UTILITIES ===== */
+@layer utilities {
+  .shadow-3xl {
+    box-shadow: var(--shadow-3xl);
+  }
+
+  .padding {
+    @apply sm:px-16 px-8 sm:py-24 py-12;
+  }
+
+  .padding-x {
+    @apply sm:px-16 px-8;
+  }
+
+  .padding-y {
+    @apply sm:py-24 py-12;
+  }
+
+  .padding-l {
+    @apply sm:pl-16 pl-8;
+  }
+
+  .padding-r {
+    @apply sm:pr-16 pr-8;
+  }
+
+  .padding-t {
+    @apply sm:pt-24 pt-12;
+  }
+
+  .padding-b {
+    @apply sm:pb-24 pb-12;
+  }
+
+  .info-text {
+    @apply font-montserrat text-slate-gray text-lg leading-7;
+  }
+}

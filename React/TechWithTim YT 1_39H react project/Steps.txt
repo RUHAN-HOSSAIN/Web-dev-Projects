@@ -1,0 +1,19 @@
+1. create vite:
+    npm create vite@latest
+
+    - give, Project_name
+    - select, react -> javascript/typescript -> then download hobe...
+
+2.  cd Folder_name  (Project_name jeta dicilam)
+    npm install     (It's download node_modules)
+    npm run dev
+
+3. Done! Now go with   ./src/App.jsx    file....
+
+
+
+
+
+## ak Page theke rak page a navigate korar jonno,
+    - install React Router DOM
+        -> cmd: npm install react-router-dom

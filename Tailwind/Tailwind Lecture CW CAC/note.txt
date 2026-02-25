@@ -1,0 +1,24 @@
+** New kono folder er modde tailwind niye kaj korte hole
+
+Step-1: bash-> npm init -y
+এতে package.json তৈরি হবে
+
+Step-2: bash-> npm install -D tailwindcss @tailwindcss/cli
+এতে Tailwind + CLI install হবে
+এতে node_modules আসবে (normal)
+
+Step-3: bash-> mkdir src dist
+Step-4: src/input.css-> @import "tailwindcss";
+
+Step-5: bash-> npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+(সময় বাঁচাতে) package.json-এ script লিখে নিতে পারেন:
+"scripts": {
+  "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+  "build": "tailwindcss -i ./src/input.css -o ./dist/output.css"
+}
+তারপর: bash->
+npm run dev
+npm run build
+
+Step-6: dist/index.html-> head part a add kor <link href="./dist/output.css" rel="stylesheet">
+Done!
