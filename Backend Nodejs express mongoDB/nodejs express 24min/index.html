@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-end</title>
+</head>
+<body>
+    <!-- 5. Connect backend with frontend -->
+    <!-- <h1>Hello World</h1>
+    <button>Get Message</button>
+
+    <script>
+        const h1 = document.querySelector('h1')
+        const button = document.querySelector('button')
+
+        button.addEventListener('click', () => {
+            fetch('http://localhost:3000/message')
+            .then( response => {
+                if(!response.ok){
+                    throw new Error(`Sever error: ${response.status} ${response.statusText}`)
+                }
+                return response.json()
+            })
+            .then( data => {
+                h1.textContent = data.message;
+            })
+            .catch( error => {
+                console.error('Error:', error)
+            })
+        })
+    </script> -->
+
+    <!-- 7. Post Routes -->
+    <form action="" id="contact-form" style="display: flex; flex-direction: column; width: 200px; gap: 10px;">
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+        <textarea name="message" id="message" placeholder="Enter message"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        const form = document.getElementById('contact-form');
+        const nameInput = document.getElementById('name');
+        const messageInput = document.getElementById('message');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const name = nameInput.value;
+            const message = messageInput.value;
+
+            fetch('http://localhost:3000/message', {
+                method: 'POST',
+                headers: {
+                    'Content-type': 'application/json'
+                },
+                body: JSON.stringify({ name, message })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Response from server:', data);
+            })
+            .catch(err => {
+                console.log('Error', err);
+            })
+        })
+    </script>
+</body>
+</html>
